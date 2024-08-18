@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #7FA1C3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+.btn{
+    background-color: #3795BD;
+    padding: 1rem 1.5rem;
+    font-size: 1.01rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: 0.01rem;
+    bottom: 0.10rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+
+}
+
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background-color: #fff ;
+    padding: 5rem 5rem;
+    height: 50%;
+    width: 60%;
+    max-width: 20rem;
+}
+
+h2{
+    text-transform: uppercase;
+    height: 3rem;
+    text-align: center;
+}
+
+.input{
+    position: relative;
+    display: flex;
+
+}
+
+.input-field{
+    width: 100%;
+    
+    outline: none;
+     border: 0.06rem solid #d2d2d2;
+     border-radius: 0.5rem;
+    padding: 1.05rem;
+    font-size: 1rem;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.1rem;
+    
+}
+
+
+#todoList p{
+  display: inline;
+ gap: 1rem;
+   
+
+}
+
+.disabled{
+    display: flex;
+    text-decoration: line-through;
+}
+#todoList .disabled{
+    color: #8f98a8;
+}
+input[type="checkbox"]
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+input[type="checkbox"]::before{
+    content:"\2713";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border: 0.06rem solid gray;
+    border-radius: 50%;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked::before{
+    color: white;
+    background-color: green;
+    border: 0.06rem solid green;
+    border-radius: 50%;
+}
+
+.counter{
+    border: 0.06rem solid gray;
+}
+
+.counter-container{
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.counter-container p{
+    align-self: center;
+}
+.counter-container button{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 1rem;
+}
+
+.footer{
+    display: flex;
+    gap: 1.8rem;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.made-by, .author{
+    font-size: 0.9rem;
+    color: darkgray;
+}
+
+.author{
+    color: blue;
+    font-weight: bold;
+}
+
+.scroll{
+    height: 15rem;
+    scrollbar-width: thin;
+
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color: blue;
+    border-radius: 0.5rem;
+}
+
+.scroll::-webkit-scrollbar-track{
+  display: none;
+}
